@@ -1,0 +1,29 @@
+
+//sass --watch assets/css/scss/pages/top10-2022.min.scss:assets/css/top10-2022.min.css
+
+$vitrine-blue: #192C53;
+$vitrine-gray: #747474;
+
+//@import "../_lib/progressive.css";
+
+@import "../components/reset-tray";
+
+
+@import "../fonts/gotham-book";
+@import "../fonts/gotham-medium";
+@import "../fonts/gotham-bold";
+@import "../fonts/gotham-black";
+@import "../fonts/sporty";
+
+@import "../components/variables";
+
+@import "top-camisas-2022/home";
+@import "top-camisas-2022/instruction";
+@import "top-camisas-2022/shirt_year";
+@import "top-camisas-2022/modalSeemore";
+@import "top-camisas-2022/modalVote";
+
+@import "../fonts/icons-font";
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}

@@ -1,0 +1,125 @@
+
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
+
+p{
+    margin-bottom: 0px;
+}
+.c-home{
+    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/topcamisas/home/background-home.png');
+    min-height: 100vh;
+    display: flex;
+    align-items:center ;
+    position: relative;
+    justify-content: center;
+    padding: 80px 0px 20px 0px;
+    background-size: cover;
+
+    @include md{
+        padding: 0px;
+    }
+    .border-home{
+        border-radius: 40px !important;
+        border: solid 1px transparent;
+        padding: 30px 0px;
+        display: flex;
+        height: 400px;
+        z-index: -1;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        border-radius: 20px;
+        background-image: linear-gradient(white, white), radial-gradient(circle at bottom , #C58F3F , rgba(197, 143, 63, 0));
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        padding: 0;
+        top: -50px;
+        @include md{
+            border: none;
+        }
+    }
+    .col-text{
+        position: relative;
+        @include md{
+            margin-left: 16px;
+        }
+
+        &::before{
+            @include md{
+                position: absolute;
+                height: 1px;
+                background:radial-gradient(119.18% 4001.93% at -9.36% 50%, #C58F3F 0%, rgba(255, 255, 255, 0) 45.31%, #C58F3F 100%);
+                content: '';
+                width: 100%;
+                top: 10%;
+                right: 0;
+            }
+            
+        }
+
+        &::after{
+            @include md{
+                position: absolute;
+                height: 1px;
+                background:radial-gradient(119.18% 4001.93% at -9.36% 50%, #C58F3F 0%, rgba(255, 255, 255, 0) 45.31%, #C58F3F 100%);
+                content: '';
+                width: 100%;
+                bottom: 10%;
+                right: 0;
+            }          
+        }
+    }
+    .title-home{
+        color: #9C7A47;
+        font-weight: 900;
+        font-size: 35px;
+        text-transform: uppercase;
+        padding-bottom: 16px;
+
+        @include md{
+            font-size: 50px;
+            padding-bottom: 0px;
+        }
+        &_number{
+            line-height: 2rem;
+        }
+
+        &-top{
+            font-weight: 300;
+            letter-spacing: 15px;
+            font-size: 20px;
+            line-height: 1rem;
+            padding-top: 16px;
+            padding-bottom: 0px;
+            
+
+            @include md{
+                padding-top: 0px;
+                font-size: 25px;
+            }
+        }
+    }
+    .home-img{
+        width: 100%;
+        object-fit: contain;
+    }
+    .content-home{
+        color: #9C7A47;
+        font-size: 16px;
+        text-align: center;
+        @include md{
+            text-align: start;
+            font-size: 17px;
+        }
+    }
+    .box-selo{
+        position: absolute;
+        bottom: 35px;
+        z-index: 9;
+        @include md{
+            bottom: -45px;
+        }
+    }
+        
+}
