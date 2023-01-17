@@ -1,8 +1,8 @@
 (function($){
 
-	var containerinstruction= $('.instruction__slick')
+	var containershirt= $('.shirt__slick')
 
-	containerinstruction.slick({
+	containershirt.slick({
 		autoplay: false,
 		autoplaySpeed: 4000,
 		pauseOnFocus: false,
@@ -10,7 +10,7 @@
 		arrows: false,
 		dots: false,
 		adaptiveHeight: true,
-		slidesToShow: 3,
+		slidesToShow: 1,
 		slidesToScroll: 1,
 		responsive: [{
 			breakpoint: 768,

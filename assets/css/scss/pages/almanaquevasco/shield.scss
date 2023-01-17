@@ -1,0 +1,40 @@
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
+.c-shield{
+    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/shield/background-shield.png');
+    padding: 80px 0px 60px 0px;
+    align-items: center;
+    display: flex;
+
+    .shield{
+        &-text{
+            color: #FFF;
+            &_toptitle{
+                color: #C3281E;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding-bottom: 12px;
+                font-size: 30px;
+                margin-bottom: 0;
+            }
+
+            &_title{
+                font-weight: 700;
+                font-size: 55px;
+                padding-bottom: 48px;
+            }
+
+            &_content{
+                font-size: 20px;
+                padding-bottom: 16px;
+                text-align: justify;
+                font-weight: 300;
+
+                &:last-child{
+                    padding-bottom: 0px;
+                }
+            }
+        }
+    }
+}

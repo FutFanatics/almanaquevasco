@@ -1,0 +1,9 @@
+
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
+
+.c-win{
+    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/bgwin.png');
+    padding: 80px 0px;
+}
