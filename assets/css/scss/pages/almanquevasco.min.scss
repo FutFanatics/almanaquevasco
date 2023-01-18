@@ -22,7 +22,7 @@ $vitrine-gray: #747474;
 @import "almanaquevasco/shirt";
 @import "almanaquevasco/win";
 @import "almanaquevasco/forms";
-
+@import "almanaquevasco/history";
 @import "../fonts/icons-font";
 @mixin md{
     @media (min-width: 1200px) { @content; }

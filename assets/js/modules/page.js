@@ -2,7 +2,7 @@
 
 	var containershirt= $('.shirt__slick')
 	var containerwin = $(".win__slick")
-
+	var containerhistory = $(".slick__history")
 
 	containershirt.slick({
 		autoplay: false,
@@ -44,7 +44,26 @@
 			
 			}]
 	});
+	containerhistory.slick({
+		autoplay: false,
+		autoplaySpeed: 4000,
+		pauseOnFocus: false,
+		pauseOnHover: false,
+		arrows: false,
+		dots: false,
+		adaptiveHeight: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
 
+						}
+			
+			}]
+	});
 
 	function copyToClipboard(element) {
 		var $temp = $("<input>");
