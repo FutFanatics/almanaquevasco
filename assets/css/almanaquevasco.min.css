@@ -1090,6 +1090,25 @@ p {
   text-align: center;
   padding: 0px 80px;
 }
+.c-home .icon-home {
+  position: absolute;
+  bottom: 40px;
+  color: #fff;
+  left: 49%;
+  font-size: 30px;
+  animation: icon-down 3s linear infinite;
+}
+@keyframes icon-down {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 .c-shield {
   background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/shield/background-shield.png");

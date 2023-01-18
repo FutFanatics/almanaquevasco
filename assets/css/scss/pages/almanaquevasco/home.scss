@@ -61,5 +61,26 @@ p{
             }
         }
     }
+
+    .icon-home{
+        position: absolute;
+        bottom: 40px;
+        color: #fff;
+        left: 49%;
+        font-size: 30px;
+        animation: icon-down 3s linear infinite;
+
+        @keyframes icon-down {
+            0%{
+                transform:translateY(0px);
+            }
+            50%{
+                transform:translateY(10px);
+            }
+            100%{
+                transform:translateY(0px);
+            }
+        }
+    }
         
 }
