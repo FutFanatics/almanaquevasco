@@ -1122,6 +1122,15 @@ p {
 .c-shield .shield-text_content:last-child {
   padding-bottom: 0px;
 }
+.c-shield .shield-img_box {
+  padding-bottom: 8px;
+  max-height: 200px;
+}
+.c-shield .shield-title_box {
+  color: #FFF;
+  font-weight: 600;
+  font-size: 20px;
+}
 
 .c-shirt {
   padding: 60px 0px;
@@ -1188,228 +1197,111 @@ p {
 
 .c-win {
   background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/bgwin.png");
-  padding: 80px 0px;
+  padding: 70px 0px;
+}
+.c-win .item {
+  padding-right: 32px;
+}
+.c-win .win-title {
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  font-size: 40px;
+  padding-bottom: 32px;
+}
+.c-win .win-card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 350px;
+  border-radius: 20px;
+}
+.c-win .win-card_img {
+  filter: grayscale(1);
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+}
+.c-win .win-card .tag_vasco {
+  position: absolute;
+  z-index: 999;
+  width: 35px;
+  height: 35px;
+  right: 10px;
+  top: 10px;
+}
+.c-win .win-card_box {
+  position: absolute;
+  background-color: #fff;
+  z-index: 99;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding: 0px 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+.c-win .win-card_box .box-content .title-card {
+  color: #313131;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.c-win .win-card_box .box-content .content-card {
+  color: #747474;
+  font-weight: 500;
+}
+.c-win .win-card_box .box-number .number {
+  font-size: 80px;
+  color: #C91B24;
+  font-weight: 800;
 }
 
-.c-modalVote .close {
-  border: none;
-  position: absolute;
-  width: 30px;
-  z-index: 999;
-  border-radius: 20px;
-  background: #0E1E41;
-  display: flex;
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  text-decoration: none;
-  color: #D9D9D9;
-  font-size: 18px;
-  font-weight: 600;
-  top: -10px;
-  right: 50%;
-  transform: translateX(50%);
+.c-forms {
+  padding: 20px 0px;
 }
-@media (min-width: 1200px) {
-  .c-modalVote .close {
-    right: -5px;
-    top: -10px;
-    transform: translateX(0);
-  }
-}
-.c-modalVote .modal-dialog {
-  max-width: 800px;
-}
-.c-modalVote .modal-body {
-  padding: 0;
-  background-color: #D9D9D9;
-}
-.c-modalVote .col-img .img-modalVote {
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-}
-.c-modalVote .col-content {
-  padding: 24px;
-  padding-top: 32px;
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 1200px) {
-  .c-modalVote .col-content {
-    min-height: 460px;
-  }
-}
-.c-modalVote .col-content .content-title {
-  font-size: 24px;
-  text-transform: uppercase;
-  line-height: 2rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-align: center;
-}
-@media (min-width: 1200px) {
-  .c-modalVote .col-content .content-title {
-    text-align: start;
-    font-size: 20px;
-    font-weight: 800;
-    letter-spacing: 4px;
-  }
-}
-.c-modalVote .col-content .content-subtitle {
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.5rem;
-}
-@media (min-width: 1200px) {
-  .c-modalVote .col-content .content-subtitle {
-    font-size: 16px;
-    text-align: start;
-  }
-}
-.c-modalVote .col-content .btn-vote {
-  background-color: #192C53;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0px;
-  font-weight: 700;
-  text-decoration: none;
-  width: 100%;
-  border: none;
-  margin-top: 16px;
-}
-@media (min-width: 1200px) {
-  .c-modalVote .col-content .btn-vote {
-    margin-top: 0;
-  }
-}
-.c-modalVote .col-content .forms-content {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-@media (min-width: 1200px) {
-  .c-modalVote .col-content .forms-content {
-    margin-bottom: 0;
-  }
-}
-.c-modalVote .col-content .forms-content .alert-privacy {
-  color: #000;
-  text-decoration: underline;
-  font-weight: 700;
-  font-size: 16px;
-}
-.c-modalVote .col-content .forms-content .vote__back {
-  color: #A0A0A0;
-  text-decoration: underline;
-  font-size: 14px;
-  margin-top: 8px;
-  font-weight: 700;
-  cursor: pointer;
-}
-.c-modalVote .col-cupom {
-  padding: 24px;
-  padding-top: 32px;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-}
-@media (min-width: 1200px) {
-  .c-modalVote .col-cupom {
-    min-height: 460px;
-    padding-right: 32px;
-  }
-}
-.c-modalVote .col-cupom .cupom-title {
-  font-size: 24px;
-  text-transform: uppercase;
-  line-height: 2rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-align: center;
-}
-.c-modalVote .col-cupom .cupom-subtitle {
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.5rem;
-}
-.c-modalVote .col-cupom .name-cupom {
-  display: flex;
-  justify-content: space-between;
-  background-color: #FFFFFF;
-  padding: 5px 20px 5px 140px;
-  text-decoration: none;
-  color: #717171;
-  font-weight: 700;
-  margin-top: 16px;
-  font-size: 20px;
-  border-radius: 2px;
-  text-transform: uppercase;
-  cursor: pointer;
+.c-forms .box-content {
   position: relative;
 }
-.c-modalVote .col-cupom .name-cupom.copied:before {
-  content: "Cupom Copiado";
-  display: block;
-  font-size: 12px;
+.c-forms .box-content::before {
   position: absolute;
-  top: -20px;
-  background-color: #FFF;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 2px;
   right: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  background-color: #C3C3C3;
+  height: 50%;
+  width: 1px;
+  content: "";
 }
-.c-modalVote .col-cupom .see-more_shirt {
-  background-color: #192C53;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0px;
-  font-weight: 700;
-  text-decoration: none;
-  width: 100%;
+.c-forms .shield {
+  width: 80px;
+  height: auto;
+}
+.c-forms .forms-content {
+  padding-left: 32px;
+}
+.c-forms .form-group {
+  margin-left: 8px;
+}
+.c-forms .form-group:first-child {
+  margin-left: 0px;
+}
+.c-forms .box-politica {
+  margin-top: 8px;
+}
+.c-forms .box-politica .btn-news {
+  background-color: #C3281E;
   border: none;
-  margin-top: 16px;
-}
-.c-modalVote .col-cupom .share-options {
-  display: flex;
-  margin-top: 16px;
-  justify-content: center;
-}
-.c-modalVote .col-cupom .share-options .btn-share {
-  background-color: #B1B1B1;
-  border-radius: 10px;
-  border: #FFFFFF 1px solid;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  margin-right: 8px;
-  text-decoration: none;
-}
-.c-modalVote .col-cupom .share-options .btn-share:last-child {
-  margin-right: 0px;
-}
-.c-modalVote .col-cupom .share-options .btn-share i {
-  text-decoration: none;
-  font-size: 24px;
   color: #FFF;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 5px;
 }
-.c-modalVote .col-cupom .vote__back {
-  color: #A0A0A0;
-  text-decoration: underline;
-  font-size: 14px;
-  margin-top: 16px;
-  font-weight: 700;
-  cursor: pointer;
-}
-.c-modalVote .col-cupom.active {
-  display: flex;
+.c-forms .box-politica .btn-news-send {
+  font-weight: 600;
+  padding: 10px 30px;
+  margin-right: 2px;
+  font-size: 16px;
 }
 
 @font-face {

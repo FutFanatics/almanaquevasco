@@ -5,5 +5,72 @@
 
 .c-win{
     background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/bgwin.png');
-    padding: 80px 0px;
+    padding: 70px 0px;
+    
+    .item{
+        padding-right: 32px;
+    }
+    .win{
+        &-title{
+            text-align: center;
+            font-weight: 700;
+            color: #fff;
+            font-size: 40px;
+            padding-bottom: 32px;
+        }
+        
+        &-card{
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            min-height: 350px;
+            border-radius: 20px;
+
+            &_img{
+                filter: grayscale(1);
+                position: absolute;
+                transform: translate(-50%);
+                left: 50%;
+            }
+            .tag_vasco{
+                position: absolute;
+                z-index: 999;
+                width: 35px;
+                height: 35px;
+                right: 10px;
+                top: 10px;
+            }
+            &_box{
+                position: absolute;
+                background-color: #fff;
+                z-index: 99;
+                bottom: 0;
+                width: 100%;
+                display: flex;
+                padding:0px 8px;
+                justify-content: space-between;
+                align-items: center;
+
+                .box-content{
+                    .title-card{
+                        color: #313131; 
+                        font-weight: 700;
+                        font-size: 20px;
+                        margin-bottom: 0;
+                    }
+                    .content-card{
+                        color: #747474;
+                        font-weight: 500;
+                    }
+                }
+                .box-number{
+                    .number{
+                        font-size: 80px;
+                        color:#C91B24 ;
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+    }
 }
