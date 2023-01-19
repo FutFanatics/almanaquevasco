@@ -4,7 +4,7 @@
         background-size: cover;
         
         &_1{
-            background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/backgroundhome.png');
+            background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/history/bg-history.png');
         }
         &_2{
             background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/shield/background-shield.png');
@@ -15,17 +15,19 @@
                 font-weight: 700;
                 font-size: 18px;
                 text-transform: uppercase;
+                margin-bottom: 0;
             }
             &_title{
                 font-weight: 700;
                 padding-top: 12px;
                 padding-bottom: 16px;
                 font-size: 30px;
+                margin-bottom: 0;
             }
             &_content{
                 font-weight: 600;
                 font-size: 16px;
-                padding-top: 8px;
+                padding-top: 16px;
 
                 &:first-child{
                     padding-top: 0px;

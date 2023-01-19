@@ -191,9 +191,9 @@ html .botao-lancamento {
 }
 @media (max-width: 767px) {
   html .botao-destaque,
-html .botao-frete,
-html .botao-indisponivel,
-html .botao-lancamento {
+  html .botao-frete,
+  html .botao-indisponivel,
+  html .botao-lancamento {
     margin: 5px 0;
     width: 100%;
   }
@@ -1327,7 +1327,7 @@ p {
   background-size: cover;
 }
 .c-history .item_1 {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/backgroundhome.png");
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/history/bg-history.png");
 }
 .c-history .item_2 {
   background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/shield/background-shield.png");
@@ -1337,17 +1337,19 @@ p {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 .c-history .item .text-history_title {
   font-weight: 700;
   padding-top: 12px;
   padding-bottom: 16px;
   font-size: 30px;
+  margin-bottom: 0;
 }
 .c-history .item .text-history_content {
   font-weight: 600;
   font-size: 16px;
-  padding-top: 8px;
+  padding-top: 16px;
 }
 .c-history .item .text-history_content:first-child {
   padding-top: 0px;
