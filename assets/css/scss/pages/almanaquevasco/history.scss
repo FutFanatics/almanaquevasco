@@ -1,14 +1,17 @@
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
 .c-history{
+    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/history/bg-history.jpg');
+    background-size: cover;
+    padding: 60px 20px;
+
+    @include md{
+        padding: 60px 0px;
+    } 
 
     .item{
-        background-size: cover;
         
-        &_1{
-            background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/history/bg-history.png');
-        }
-        &_2{
-            background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/shield/background-shield.png');
-        }
         .text-history{
             &_toptitle{
                 color: #C3281E;
@@ -16,6 +19,11 @@
                 font-size: 18px;
                 text-transform: uppercase;
                 margin-bottom: 0;
+                padding-top: 48px;
+
+                @include md{
+                    padding-top: 0;
+                }
             }
             &_title{
                 font-weight: 700;

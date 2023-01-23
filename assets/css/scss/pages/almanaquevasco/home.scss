@@ -14,7 +14,7 @@ p{
     align-items:center ;
     position: relative;
     justify-content: center;
-    padding: 80px 0px 20px 0px;
+    padding: 80px 20px 20px 20px;
     background-size: cover;
     animation: backgroundanimation 30s linear infinite;
 
@@ -36,6 +36,10 @@ p{
         }
     }
 
+    @include md{
+        padding: 80px 0px 20px 0px;
+    }
+
     .home{
         &-shield{
 
@@ -44,19 +48,39 @@ p{
             color:#FFFFFF;
 
             &_title{
-                font-size: 80px;
+                height: 60px;
+                text-align: center;
+
+                @include md{
+                    min-height: 100px;
+                }
             }
 
             &_subtitle{
-                font-size: 30px;
+                font-size: 35px;
                 font-weight: 700;
                 padding-top: 12px;
                 padding-bottom: 24px;
+                text-align: center;
+
+                @include md{
+                    text-align: start;
+                    font-size: 30px;
+                }
             }
             &_content{
-                font-size: 20px;
+                padding-top: 16px;
+                font-size: 18px;
                 text-align: center;
-                padding: 0px 80px;
+                margin-bottom: 32px;
+                
+
+                @include md{
+                    padding-top: 0;
+                    font-size: 20px;
+                    margin-bottom: 0px;
+                    padding: 0px 80px;
+                }
                 
             }
         }
@@ -64,10 +88,10 @@ p{
 
     .icon-home{
         position: absolute;
-        bottom: 40px;
+        bottom: 20px;
         color: #fff;
         left: 49%;
-        font-size: 30px;
+        font-size: 40px;
         animation: icon-down 3s linear infinite;
 
         @keyframes icon-down {
@@ -80,6 +104,10 @@ p{
             100%{
                 transform:translateY(0px);
             }
+        }
+        @include md{
+            bottom: 40px;
+            font-size: 30px;
         }
     }
         

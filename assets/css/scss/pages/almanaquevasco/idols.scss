@@ -1,0 +1,105 @@
+.c-idols{
+    .slick__idols{
+        
+            .item{
+                padding: 60px 0px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-height: 700px;
+                &_1{
+                    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/bg-dinamite.png');
+                    
+                }
+                &_2{
+                    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/bg-romario.png');
+                    
+                }
+                &_3{
+                    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/bg-edmundo.png');
+                }
+                &_4{
+                    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/bg-queixada.png');
+                }
+                &_5{
+                    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/bg-pernambucano.png');
+                }
+
+            }
+            
+        .idols{
+            &-text{
+                &_toptitle{
+                    color:#C3281E ;
+                    font-size: 25px;
+                    padding-bottom: 32px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                &_content{
+                    color: #fff;
+                    font-size: 18px;
+                    margin-top: 32px;
+                    font-weight: 300;
+                    margin-bottom: 32px;
+                }
+                &-winner{
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 300;
+                    
+                    strong{
+                        font-weight: 700;
+                        padding-right: 8px;
+                    }
+                }
+                &_title-win{
+                    margin-top: 32px;
+                    padding-bottom: 8px;
+                    color:#C3281E ;
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+            }
+        }
+        .box-title{
+            .top-name{
+                font-size: 25px;
+                font-weight: 200;
+                color: #fff;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                line-height: 0.5rem;
+            }
+            .name{
+                font-size: 80px;
+                font-weight: 900;
+                margin-bottom: 0;
+                color: #fff;
+                text-transform: uppercase;
+            }
+            .bottom-name{
+                color:#C3281E ;
+                text-align: end;
+                font-weight: 300;
+                font-size: 18px;
+                text-transform: uppercase;
+                line-height: 0.4rem;
+            }
+        }
+        .box-skill{
+            
+
+            .skill{
+                padding: 4px 10px;
+                font-size: 16px;
+                margin-bottom: 8px;
+                color: #FFF;
+                font-weight: 700;
+                border-radius: 10px;
+                background-color: rgba(147, 147, 147, 0.7);
+                text-decoration: none;
+            }
+        }
+    }
+
+}

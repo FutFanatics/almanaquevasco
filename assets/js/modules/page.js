@@ -3,8 +3,50 @@
 	var containershirt= $('.shirt__slick')
 	var containerwin = $(".win__slick")
 	var containerhistory = $(".slick__history")
+	var containeridols = $(".slick__idols")
+	var containershield = $(".slick__shield")
 
 	containershirt.slick({
+		autoplay: false,
+		autoplaySpeed: 4000,
+		pauseOnFocus: false,
+		pauseOnHover: false,
+		arrows: false,
+		dots: false,
+		adaptiveHeight: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+
+						}
+			
+			}]
+	});
+	containeridols.slick({
+		autoplay: false,
+		autoplaySpeed: 4000,
+		pauseOnFocus: false,
+		pauseOnHover: false,
+		arrows: false,
+		dots: false,
+		adaptiveHeight: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+
+						}
+			
+			}]
+	});
+	containershield.slick({
 		autoplay: false,
 		autoplaySpeed: 4000,
 		pauseOnFocus: false,

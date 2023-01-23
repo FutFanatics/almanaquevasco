@@ -4,11 +4,19 @@
 }
 
 .c-win{
-    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/bgwin.png');
-    padding: 70px 0px;
+    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/bgwin.png');       
+    padding: 70px 20px;
     
+    @include md{
+        padding: 70px 0px;
+    }
+
     .item{
-        padding-right: 32px;
+        padding-right: 8px;
+        @include md{
+            padding-right: 32px;
+        }
+        
     }
     .win{
         &-title{
@@ -31,6 +39,13 @@
                 position: absolute;
                 transform: translate(-50%);
                 left: 50%;
+                height: 100%;
+
+                
+            }
+            .width-100{
+                width: 100%;
+                height: auto;
             }
             .tag_vasco{
                 position: absolute;
@@ -47,7 +62,8 @@
                 bottom: 0;
                 width: 100%;
                 display: flex;
-                padding:0px 8px;
+                min-height: 100px;
+                padding:0px 16px;
                 justify-content: space-between;
                 align-items: center;
 

@@ -1,6 +1,14 @@
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
 .c-shirt{
-    padding: 60px 0px;
+    padding: 60px 20px 20px 20px;
     background-color: #ECECEC;
+
+    @include md{
+        padding: 60px 0px;
+    }
+
   .box-title{
     .shirt{
         &-text{
@@ -16,6 +24,11 @@
             &_title{
                 font-weight: 800;
                 font-size: 45px;
+                text-align: center;
+
+                @include md{
+                    text-align: start;
+                }
             }
         }
     }
@@ -24,12 +37,21 @@
     &__slick{
         
         .item{
-            padding: 80px 0px;
+            padding: 30px 0px;
+
+            @include md{
+                padding: 80px 0px;
+            }
         }
         .box-number{
-            transform: rotate(270deg);
             position: relative;
-            right: 40%;
+            top: 40%;
+
+            @include md{
+                transform: rotate(270deg);
+                right: 40%;
+                top: 0;
+            }
         
             .number{
                 color: #C6C6C6;
@@ -38,14 +60,33 @@
                 position: absolute;
             }
         }
-    
+        .box-shirt{
+            position: relative;
+            left: 0%;
+            width: 100%;
+
+            @include md{
+                left: 40%;
+            }
+            .shirt-img{
+                max-height: 400px;  
+            }
+        }
         .slick{
             &-text{
                 &_title{
                     font-weight: 800;
                     color: #000;
-                    font-size: 60px;
-                    padding-bottom: 16px;
+                    font-size: 100px;
+                    padding-bottom: 8px;
+                    display: none;
+                    text-align: center;
+                    @include md{
+                        text-align: start;
+                        padding-bottom: 16px;
+                        font-size: 60px;
+                        display: block;
+                    }
                 }
                 &_content{
                     font-size: 18px;
@@ -59,10 +100,15 @@
                     height: 60px;
                     position: absolute;
                     left: -20px;
+                    display: none;
+
+                    @include md{
+                        display: block;
+                    }
                 }
                 .text{
                     background-color: #231F20;
-                    padding: 8px 20px 8px 60px ;
+                    padding: 8px 20px;
                     color: #fff;
                     text-decoration: none;
                     text-transform: uppercase;
@@ -70,6 +116,10 @@
                     font-size: 18px;
                     border-radius: 10px;
                     box-shadow: rgba(0,0,0, 0.1) 0px 4px;
+
+                    @include md{
+                        padding: 8px 20px 8px 60px ;
+                    }
                 }
             }
             
