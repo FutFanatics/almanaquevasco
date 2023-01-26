@@ -9,13 +9,21 @@
         position: relative;
         &::before{
             position: absolute;
-            right: 0;
-            bottom: 50%;
-            transform: translateY(50%);
+            right: 50%;
+            bottom: 0%;
+            transform: translateX(50%);
             background-color: #C3C3C3;
-            height: 50%;
-            width: 1px;
+            height: 1px;
+            width: 50%;
             content: '';
+
+            @include md{
+                transform: translateY(50%);
+                bottom: 50%;
+                right: 0%;
+                height: 50%;
+                width: 1px;
+            }
         }
     }
     .shield{
@@ -27,7 +35,11 @@
     }
 
     .form-group{
-        margin-left: 8px;
+        margin-top: 8px;
+        @include md{
+            margin-top: 0px;
+            margin-left: 8px;
+        }
 
         &:first-child{
             margin-left: 0px;

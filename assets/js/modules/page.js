@@ -91,9 +91,11 @@
 		autoplaySpeed: 4000,
 		pauseOnFocus: false,
 		pauseOnHover: false,
-		arrows: false,
+		arrows: true,
 		dots: false,
 		adaptiveHeight: true,
+		prevArrow: $('.slick-nav_historia').find('.slick-prev'),
+        nextArrow: $('.slick-nav_historia').find('.slick-next'),
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		responsive: [{
@@ -105,7 +107,10 @@
 						}
 			
 			}]
-	});
+	}).on('afterChange', function(event, slick, currentSlide, nextSlide){
+		var current = currentSlide + 1;
+		$('.slick-nav_historia').find('.slick-numbers .current').html(current < 10 ? "0" + current : current)}
+);
 
 	function copyToClipboard(element) {
 		var $temp = $("<input>");

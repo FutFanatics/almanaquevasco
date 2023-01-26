@@ -45,19 +45,26 @@
         }
         .box-number{
             position: relative;
-            top: 40%;
-
+            display: flex;
+            justify-content: center;
+        
             @include md{
                 transform: rotate(270deg);
-                right: 40%;
-                top: 0;
+                right: 45%;
+                top: -80%;
+                display: block;
             }
         
             .number{
                 color: #C6C6C6;
-                font-size: 150px;
+                font-size: 120px;
                 font-weight: 800;
-                position: absolute;
+                text-align: center;
+                
+                @include md{
+                    position: absolute;
+                    font-size: 150px;
+                }
             }
         }
         .box-shirt{
@@ -75,7 +82,7 @@
         .slick{
             &-text{
                 &_title{
-                    font-weight: 800;
+                    font-weight: 800; 
                     color: #000;
                     font-size: 100px;
                     padding-bottom: 8px;
@@ -90,7 +97,11 @@
                 }
                 &_content{
                     font-size: 18px;
-                    padding-bottom: 64px;
+                    padding-bottom: 16px;
+
+                    @include md{
+                        padding-bottom: 64px;
+                    }
                 }
             }
             &-target{

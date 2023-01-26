@@ -2,28 +2,76 @@
     .slick__idols{
         
             .item{
-                padding: 60px 0px;
+                padding: 60px 20px;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: contain;
                 min-height: 700px;
+                background-color: #222222;
+    
                 &_1{
-                    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/bg-dinamite.png');
+                    background-image: linear-gradient(0deg, #0D0D0D, rgba(34, 34, 34, 0) 73.15%), url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/Dinamite-Fundo.png');
                     
                 }
                 &_2{
-                    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/bg-romario.png');
+                    background-image: linear-gradient(0deg, #0D0D0D, rgba(34, 34, 34, 0) 73.15%), url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/romario-fundo.png');
                     
                 }
                 &_3{
-                    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/bg-edmundo.png');
+                    background-image: linear-gradient(0deg, #0D0D0D, rgba(34, 34, 34, 0) 73.15%), url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/edmundo-fundo.png');
                 }
                 &_4{
-                    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/bg-queixada.png');
+                    background-image: linear-gradient(0deg, #0D0D0D, rgba(34, 34, 34, 0) 73.15%), url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/menezesfundo.png');
                 }
                 &_5{
-                    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/bg-pernambucano.png');
+                    background-image: linear-gradient(0deg, #0D0D0D, rgba(34, 34, 34, 0) 73.15%), url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/pernambucano-fundo.png');
                 }
 
+                @include md{
+                    padding: 60px 0px;
+                }
+            }
+            .col-img{
+                position: relative;
+                &_1{
+                    .img-idols{
+                        max-height: 600px;
+                        position: absolute;
+                        bottom: -49.5%;
+                        right: 0;
+                    }
+                }
+                &_2{
+                    .img-idols{
+                        max-height: 530px;
+                        position: absolute;
+                        bottom: -35%;
+                        right: -5%;
+                    }
+                }
+                &_3{
+                    .img-idols{
+                        max-height: 530px;
+                        position: absolute;
+                        bottom: -41%;
+                        right: -5%;
+                    }
+                }
+                &_4{
+                    .img-idols{
+                        max-height: 600px;
+                        position: absolute;
+                        bottom: -25%;
+                        right: 5%;
+                    }
+                }
+                &_5{
+                    .img-idols{
+                        max-height: 600px;
+                        position: absolute;
+                        bottom: -10%;
+                        right: 0%;
+                    }
+                }
             }
             
         .idols{
@@ -71,33 +119,53 @@
                 line-height: 0.5rem;
             }
             .name{
-                font-size: 80px;
+                font-size: 60px;
                 font-weight: 900;
                 margin-bottom: 0;
                 color: #fff;
                 text-transform: uppercase;
+
+                @include md{
+                    font-size: 80px;
+                }
             }
             .bottom-name{
                 color:#C3281E ;
-                text-align: end;
+                text-align: start;
                 font-weight: 300;
                 font-size: 18px;
                 text-transform: uppercase;
                 line-height: 0.4rem;
+
+                @include md{
+                    text-align: end;
+                }
             }
         }
         .box-skill{
-            
+            display: flex;
+
+            @include md{
+                display: block;
+                padding-left: 16px;
+            }
 
             .skill{
+                max-width: 120px;
                 padding: 4px 10px;
                 font-size: 16px;
-                margin-bottom: 8px;
+                margin: 0px 8px 0px 0px;
+                display: flex;
+                justify-content: center;
                 color: #FFF;
                 font-weight: 700;
                 border-radius: 10px;
                 background-color: rgba(147, 147, 147, 0.7);
                 text-decoration: none;
+
+                @include md{
+                    margin: 0px 0px 8px 0px;
+                }
             }
         }
     }
