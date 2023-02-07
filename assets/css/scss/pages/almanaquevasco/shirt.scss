@@ -137,4 +137,34 @@
         }
     }
   }
+  .slick-nav_shirt{
+    justify-content: space-between;
+    color: #FFF;
+    padding: 0px 0px;
+    @include md{
+        justify-content: center;
+    }
+
+    button{
+        background-color: transparent;
+        border: none;
+        padding-top: 16px;
+
+        i{
+            font-size: 30px;
+            color: #000000;
+            font-weight: 300;
+        }
+    }
+    .current{
+        font-weight: 800;
+        font-size: 40px;
+        color: #C3281E;
+    }
+    .total{
+        font-size: 25px;
+        color: #000000;
+        font-weight: 600;
+    }
+}
 }

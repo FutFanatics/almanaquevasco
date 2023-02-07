@@ -1332,6 +1332,36 @@ p {
     padding: 8px 20px 8px 60px;
   }
 }
+.c-shirt .slick-nav_shirt {
+  justify-content: space-between;
+  color: #FFF;
+  padding: 0px 0px;
+}
+@media (min-width: 1200px) {
+  .c-shirt .slick-nav_shirt {
+    justify-content: center;
+  }
+}
+.c-shirt .slick-nav_shirt button {
+  background-color: transparent;
+  border: none;
+  padding-top: 16px;
+}
+.c-shirt .slick-nav_shirt button i {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 300;
+}
+.c-shirt .slick-nav_shirt .current {
+  font-weight: 800;
+  font-size: 40px;
+  color: #C3281E;
+}
+.c-shirt .slick-nav_shirt .total {
+  font-size: 25px;
+  color: #000000;
+  font-weight: 600;
+}
 
 .c-win {
   background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/bgwin.png");
@@ -1476,7 +1506,7 @@ p {
 .c-history {
   background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/history/bg-history.jpg");
   background-size: cover;
-  padding: 60px 20px;
+  padding: 60px 20px 20px 20px;
 }
 @media (min-width: 1200px) {
   .c-history {
@@ -1511,13 +1541,52 @@ p {
 .c-history .item .text-history_content:first-child {
   padding-top: 0px;
 }
+.c-history .slick-nav_historia {
+  justify-content: space-between;
+  color: #FFF;
+  padding: 0px 0px;
+}
+@media (min-width: 1200px) {
+  .c-history .slick-nav_historia {
+    justify-content: center;
+  }
+}
+.c-history .slick-nav_historia button {
+  background-color: transparent;
+  border: none;
+  padding-top: 16px;
+}
+.c-history .slick-nav_historia button i {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 300;
+}
+.c-history .slick-nav_historia .current {
+  font-weight: 800;
+  font-size: 40px;
+  color: #757575;
+}
+.c-history .slick-nav_historia .total {
+  font-size: 25px;
+  color: #000000;
+  font-weight: 600;
+}
 
+.c-idols {
+  position: relative;
+  background-color: #0E0E0E;
+}
 .c-idols .slick__idols .item {
-  padding: 60px 20px;
+  padding: 60px 0px;
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 700px;
   background-color: #222222;
+}
+@media (min-width: 1200px) {
+  .c-idols .slick__idols .item {
+    padding: 60px 20px;
+  }
 }
 .c-idols .slick__idols .item_1 {
   background-image: linear-gradient(0deg, #0D0D0D, rgba(34, 34, 34, 0) 73.15%), url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/almanaquevasco/idols/Dinamite-Fundo.png");
@@ -1543,34 +1612,59 @@ p {
   position: relative;
 }
 .c-idols .slick__idols .col-img_1 .img-idols {
-  max-height: 600px;
-  position: absolute;
+  max-height: 120px;
   bottom: -49.5%;
   right: 0;
 }
+@media (min-width: 1200px) {
+  .c-idols .slick__idols .col-img_1 .img-idols {
+    position: absolute;
+    max-height: 600px;
+  }
+}
 .c-idols .slick__idols .col-img_2 .img-idols {
-  max-height: 530px;
-  position: absolute;
+  max-height: 130px;
   bottom: -35%;
   right: -5%;
 }
+@media (min-width: 1200px) {
+  .c-idols .slick__idols .col-img_2 .img-idols {
+    position: absolute;
+    max-height: 530px;
+  }
+}
 .c-idols .slick__idols .col-img_3 .img-idols {
-  max-height: 530px;
-  position: absolute;
+  max-height: 120px;
   bottom: -41%;
   right: -5%;
 }
+@media (min-width: 1200px) {
+  .c-idols .slick__idols .col-img_3 .img-idols {
+    position: absolute;
+    max-height: 530px;
+  }
+}
 .c-idols .slick__idols .col-img_4 .img-idols {
-  max-height: 600px;
-  position: absolute;
+  max-height: 130px;
   bottom: -25%;
   right: 5%;
 }
+@media (min-width: 1200px) {
+  .c-idols .slick__idols .col-img_4 .img-idols {
+    position: absolute;
+    max-height: 600px;
+  }
+}
 .c-idols .slick__idols .col-img_5 .img-idols {
-  max-height: 600px;
-  position: absolute;
+  max-height: 120px;
   bottom: -10%;
   right: 0%;
+}
+@media (min-width: 1200px) {
+  .c-idols .slick__idols .col-img_5 .img-idols {
+    position: absolute;
+    max-height: 600px;
+  }
 }
 .c-idols .slick__idols .idols-text_toptitle {
   color: #C3281E;
@@ -1585,11 +1679,23 @@ p {
   margin-top: 32px;
   font-weight: 300;
   margin-bottom: 32px;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .c-idols .slick__idols .idols-text_content {
+    display: block;
+  }
 }
 .c-idols .slick__idols .idols-text-winner {
   color: #fff;
   font-size: 18px;
   font-weight: 300;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .c-idols .slick__idols .idols-text-winner {
+    display: block;
+  }
 }
 .c-idols .slick__idols .idols-text-winner strong {
   font-weight: 700;
@@ -1601,6 +1707,12 @@ p {
   color: #C3281E;
   font-weight: 700;
   font-size: 20px;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .c-idols .slick__idols .idols-text_title-win {
+    display: block;
+  }
 }
 .c-idols .slick__idols .box-title .top-name {
   font-size: 25px;
@@ -1661,6 +1773,90 @@ p {
   .c-idols .slick__idols .box-skill .skill {
     margin: 0px 0px 8px 0px;
   }
+}
+.c-idols .slick__idols .about {
+  width: 50%;
+  height: 70px;
+  background: #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #707172;
+  font-weight: 700;
+  margin-top: 16px;
+}
+.c-idols .slick__idols .about.active {
+  color: #FFF;
+  background: #000;
+}
+.c-idols .slick__idols .title-idols {
+  width: 50%;
+  height: 70px;
+  background: #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #707172;
+  font-weight: 700;
+  margin-top: 16px;
+}
+.c-idols .slick__idols .title-idols.active {
+  color: #FFF;
+  background: #000;
+}
+.c-idols .slick__idols .content-idols .content-about {
+  display: none;
+}
+.c-idols .slick__idols .content-idols .content-about.active {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+.c-idols .slick__idols .content-idols .content-title {
+  display: none;
+}
+.c-idols .slick__idols .content-idols .content-title.active {
+  display: block;
+  color: #FFF;
+  font-size: 18px;
+}
+.c-idols .slick__idols .content-idols .content-title.active strong {
+  font-weight: 600;
+  padding-right: 8px;
+}
+.c-idols .slick-nav_idols {
+  background-color: #0E0E0E;
+  justify-content: space-between;
+  color: #FFF;
+  padding: 0px 40px;
+}
+@media (min-width: 1200px) {
+  .c-idols .slick-nav_idols {
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+  }
+}
+.c-idols .slick-nav_idols button {
+  background-color: transparent;
+  border: none;
+  padding-top: 16px;
+}
+.c-idols .slick-nav_idols button i {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 300;
+}
+.c-idols .slick-nav_idols .current {
+  font-weight: 700;
+  font-size: 30px;
+}
+.c-idols .slick-nav_idols .total {
+  font-size: 20px;
 }
 
 @font-face {
