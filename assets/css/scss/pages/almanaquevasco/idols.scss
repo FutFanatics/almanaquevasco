@@ -40,13 +40,15 @@
                 position: relative;
                 &_1{
                     .img-idols{
-                        max-height: 120px;
-                        bottom: -49.5%;
-                        right: 0;
+                        max-height: 290px;
+                        position: relative;
+                        right: -30px;
 
                         @include md{
                             position: absolute;
                             max-height: 600px;
+                            bottom: -49.5%;
+                            right: 0;
                         }
                     }
                 }
@@ -96,7 +98,14 @@
                     }
                 }
             }
-            
+            .col-content{
+                position: relative;
+                top: -100px;
+
+                @include md{
+                    top: 0;
+                }
+            }
         .idols{
             &-text{
                 &_toptitle{
@@ -162,7 +171,14 @@
                 @include md{
                     font-size: 80px;
                 }
+                &_pernambucano{
+                    font-size: 40px;
+                    @include md{
+                        font-size: 55px;
+                    }
+                }
             }
+            
             .bottom-name{
                 color:#C3281E ;
                 text-align: start;

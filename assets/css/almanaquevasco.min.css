@@ -1138,7 +1138,7 @@ p {
 }
 @media (min-width: 1200px) {
   .c-home .icon-home {
-    bottom: 40px;
+    bottom: 3%;
     font-size: 30px;
   }
 }
@@ -1612,14 +1612,16 @@ p {
   position: relative;
 }
 .c-idols .slick__idols .col-img_1 .img-idols {
-  max-height: 120px;
-  bottom: -49.5%;
-  right: 0;
+  max-height: 290px;
+  position: relative;
+  right: -30px;
 }
 @media (min-width: 1200px) {
   .c-idols .slick__idols .col-img_1 .img-idols {
     position: absolute;
     max-height: 600px;
+    bottom: -49.5%;
+    right: 0;
   }
 }
 .c-idols .slick__idols .col-img_2 .img-idols {
@@ -1664,6 +1666,15 @@ p {
   .c-idols .slick__idols .col-img_5 .img-idols {
     position: absolute;
     max-height: 600px;
+  }
+}
+.c-idols .slick__idols .col-content {
+  position: relative;
+  top: -100px;
+}
+@media (min-width: 1200px) {
+  .c-idols .slick__idols .col-content {
+    top: 0;
   }
 }
 .c-idols .slick__idols .idols-text_toptitle {
@@ -1732,6 +1743,14 @@ p {
 @media (min-width: 1200px) {
   .c-idols .slick__idols .box-title .name {
     font-size: 80px;
+  }
+}
+.c-idols .slick__idols .box-title .name_pernambucano {
+  font-size: 40px;
+}
+@media (min-width: 1200px) {
+  .c-idols .slick__idols .box-title .name_pernambucano {
+    font-size: 55px;
   }
 }
 .c-idols .slick__idols .box-title .bottom-name {
