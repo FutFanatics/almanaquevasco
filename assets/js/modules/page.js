@@ -195,6 +195,10 @@
 		$('.title-idols').removeClass('active');
 	})
 
+	$('.see-more').on('click',function(){
+		$('.content-history').addClass('active');
+		$('see-more').addClass('active');
+	})
 
 })(jQuery);
 

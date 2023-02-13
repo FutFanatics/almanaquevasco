@@ -4,7 +4,7 @@
     .slick__idols{
         
             .item{
-                padding: 60px 0px;
+                padding: 60px 0px 0px 0px;
                 background-repeat: no-repeat;
                 background-size: contain;
                 min-height: 700px;
@@ -40,10 +40,10 @@
                 position: relative;
                 &_1{
                     .img-idols{
-                        max-height: 290px;
+                        max-height: 300px;
                         position: relative;
-                        right: -30px;
-
+                        right: -17%;
+                        bottom: 3%;
                         @include md{
                             position: absolute;
                             max-height: 600px;
@@ -54,56 +54,77 @@
                 }
                 &_2{
                     .img-idols{
-                        max-height: 130px;
-                        
-                        bottom: -35%;
-                        right: -5%;
+                        max-height: 300px;
+                        position: relative;
+                        bottom: 19%;
+                        right: -15.5%;
+                    
                         @include md{
                             position: absolute;
                             max-height: 530px;
+                            bottom: -35%;
+                            right: -5%;
                         }
                     }
                 }
                 &_3{
                     .img-idols{
-                        max-height: 120px;
-                        bottom: -41%;
-                        right: -5%;
+                        max-height: 300px;
+                        position: relative;
+                        bottom: 5%;
+                        right: -15.5%;
                         @include md{
                             position: absolute;
                             max-height: 530px;
+                            bottom: -41%;
+                            right: -5%;
                         }
                     }
                 }
                 &_4{
                     .img-idols{
-                        max-height: 130px;
-                        bottom: -25%;
-                        right: 5%;
+                        max-height: 300px;
+                        position: relative;
+                        bottom: -5%;
+                        right: 20%;
                         @include md{
                             position: absolute;
                             max-height: 600px;
+                            bottom: -41%;
                         }
                     }
                 }
                 &_5{
                     .img-idols{
-                        max-height: 120px;
-                        bottom: -10%;
-                        right: 0%;
+                        max-height: 300px;
+                        bottom: -0%;
+                        position: relative;
+                        right: 3%;
                         @include md{
                             position: absolute;
                             max-height: 600px;
+                            bottom: -20%;
+                            right: 0%;
                         }
                     }
                 }
             }
             .col-content{
                 position: relative;
-                top: -100px;
+                top: -155px;
+                padding: 0;
 
                 @include md{
                     top: 0;
+                    padding-right: calc(var(--bs-gutter-x) * .5);
+                    padding-left: calc(var(--bs-gutter-x) * .5);
+                }
+                .container-skill{
+                    padding: 0px 16px;
+
+                    @include md{
+                        padding: 0px;
+                    }
                 }
             }
         .idols{
@@ -254,6 +275,7 @@
 
         }
         .content-idols{
+            padding: 0px 16px;
             .content-about{
                 display: none;
 

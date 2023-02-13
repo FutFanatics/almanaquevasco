@@ -11,7 +11,50 @@
     } 
 
     .item{
-        
+        .content-history{
+            position: relative;
+            max-height: 400px;
+            overflow: hidden;
+            
+            @include md{
+                max-height: 400px;
+                overflow: auto;
+
+                &::-webkit-scrollbar-track {
+                    background-color: #F4F4F4;
+                }
+                &::-webkit-scrollbar {
+                    width: 6px;
+                    background: #F4F4F4;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #dad7d7;
+                }
+            }
+            &.active{
+               max-height: 1000px;
+            }
+            
+        }
+        .see-more{
+            position: absolute;
+            width: 100%;
+            border:#000000 3px solid;
+            display: flex;
+            justify-content: center;
+            color: #000;
+            font-size: 16px;
+            padding: 8px 0px;
+            font-weight: 800;
+            bottom: 0;
+            text-transform: uppercase;
+            z-index: 99;
+            
+            &.active{
+
+            }
+        }
+
         .text-history{
             &_toptitle{
                 color: #C3281E;
