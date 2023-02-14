@@ -7,11 +7,11 @@
                 padding: 60px 0px 0px 0px;
                 background-repeat: no-repeat;
                 background-size: contain;
-                min-height: 700px;
                 background-color: #222222;
 
                 @include md{
                     padding: 60px 20px;
+                    min-height: 700px;
                 }
     
                 &_1{
@@ -40,10 +40,10 @@
                 position: relative;
                 &_1{
                     .img-idols{
-                        max-height: 300px;
+                        max-height: 350px;
                         position: relative;
-                        right: -17%;
-                        bottom: 3%;
+                        right: -1%;
+                        bottom: 6%;
                         @include md{
                             position: absolute;
                             max-height: 600px;
@@ -54,10 +54,10 @@
                 }
                 &_2{
                     .img-idols{
-                        max-height: 300px;
+                        max-height: 330px;
                         position: relative;
-                        bottom: 19%;
-                        right: -15.5%;
+                        bottom: 10%;
+                        right: -7%;
                     
                         @include md{
                             position: absolute;
@@ -69,11 +69,11 @@
                 }
                 &_3{
                     .img-idols{
-                        max-height: 300px;
+                        max-height: 350px;
                         position: relative;
-                        bottom: 5%;
-                        right: -15.5%;
-                        @include md{
+                        bottom: 10%;
+                        right: -1%;
+                    @include md{
                             position: absolute;
                             max-height: 530px;
                             bottom: -41%;
@@ -83,10 +83,10 @@
                 }
                 &_4{
                     .img-idols{
-                        max-height: 300px;
+                        max-height: 350px;
                         position: relative;
-                        bottom: -5%;
-                        right: 20%;
+                        bottom: 7%;
+                        right: 19%;
                         @include md{
                             position: absolute;
                             max-height: 600px;
@@ -96,10 +96,10 @@
                 }
                 &_5{
                     .img-idols{
-                        max-height: 300px;
-                        bottom: -0%;
+                        max-height: 370px;
+                        bottom: 3%;
                         position: relative;
-                        right: 3%;
+                        right: 5%;
                         @include md{
                             position: absolute;
                             max-height: 600px;
@@ -121,9 +121,12 @@
                 }
                 .container-skill{
                     padding: 0px 16px;
-
+                    padding-bottom: 16px;
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 77.08%);
                     @include md{
                         padding: 0px;
+                        padding-bottom: 0;
+                        background: transparent;
                     }
                 }
             }
@@ -249,7 +252,6 @@
             align-items: center;
             color: #707172  ;
             font-weight: 700;
-            margin-top: 16px;
             
             &.active{
                 color: #FFF;
@@ -266,7 +268,6 @@
             align-items: center;
             color: #707172  ;
             font-weight: 700;
-            margin-top: 16px;
             
             &.active{
                 color: #FFF;
