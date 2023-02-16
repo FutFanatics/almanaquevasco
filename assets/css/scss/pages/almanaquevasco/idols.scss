@@ -38,6 +38,50 @@
             }
             .col-img{
                 position: relative;
+
+                .number-idol{
+                    &_1{
+                        position: absolute;
+                        height: 150px;
+                        top: 20%;
+                        right: -3%;
+                        z-index: 0;
+                        opacity: 0.3;
+                    }
+                    &_2{
+                        position: absolute;
+                        height: 180px;
+                        top: 20%;
+                        right: 15%;
+                        z-index: 0;
+                        opacity: 0.3;
+
+                    }
+                    &_3{
+                        position: absolute;
+                        height: 150px;
+                        top: 20%;
+                        right: 5%;
+                        z-index: 0;
+                    }
+                    &_4{
+                        position: absolute;
+                        height: 150px;
+                        top: 20%;
+                        right: 0%;
+                        z-index: 0;
+                        opacity: 0.3;
+                    }
+                    &_5{
+                        position: absolute;
+                        height: 150px;
+                        top: 20%;
+                        right: 0%;
+                        z-index: 0;
+                        opacity: 0.3;
+                    }
+
+                }
                 &_1{
                     .img-idols{
                         max-height: 350px;
@@ -47,8 +91,9 @@
                         @include md{
                             position: absolute;
                             max-height: 600px;
-                            bottom: -49.5%;
-                            right: 0;
+                            bottom: -50%;
+                            right: 20%;
+                            z-index: 999;
                         }
                     }
                 }
@@ -57,13 +102,14 @@
                         max-height: 330px;
                         position: relative;
                         bottom: 10%;
-                        right: -7%;
+                        right: -6%;
                     
                         @include md{
                             position: absolute;
-                            max-height: 530px;
-                            bottom: -35%;
-                            right: -5%;
+                            max-height: 580px;
+                            bottom: -26%;
+                            right: 0%;
+                            z-index: 999;
                         }
                     }
                 }
@@ -72,12 +118,13 @@
                         max-height: 350px;
                         position: relative;
                         bottom: 10%;
-                        right: -1%;
+                        right: 0%;
                     @include md{
                             position: absolute;
-                            max-height: 530px;
-                            bottom: -41%;
+                            max-height: 600px;
+                            bottom: -34%;
                             right: -5%;
+                            z-index: 999;
                         }
                     }
                 }
@@ -90,7 +137,9 @@
                         @include md{
                             position: absolute;
                             max-height: 600px;
-                            bottom: -41%;
+                            bottom: -25%;
+                            z-index: 999;
+                            right: 35%;
                         }
                     }
                 }
@@ -99,12 +148,13 @@
                         max-height: 370px;
                         bottom: 3%;
                         position: relative;
-                        right: 5%;
+                        right: 6%;
                         @include md{
                             position: absolute;
                             max-height: 600px;
-                            bottom: -20%;
-                            right: 0%;
+                            bottom: -18%;
+                            right: 2%;
+                            z-index: 999;
                         }
                     }
                 }
@@ -118,6 +168,7 @@
                     top: 0;
                     padding-right: calc(var(--bs-gutter-x) * .5);
                     padding-left: calc(var(--bs-gutter-x) * .5);
+                    z-index: 99999;
                 }
                 .container-skill{
                     padding: 0px 16px;
@@ -137,7 +188,11 @@
                     font-size: 25px;
                     padding-bottom: 32px;
                     font-weight: 700;
+                    padding-left: 16px;
                     text-transform: uppercase;
+                    @include md{
+                        padding-left: 0px;
+                    }
                 }
                 &_content{
                     color: #fff;
@@ -196,9 +251,10 @@
                     font-size: 80px;
                 }
                 &_pernambucano{
-                    font-size: 40px;
+                    font-size: 38px;
+                    padding-top: 3px;
                     @include md{
-                        font-size: 55px;
+                        font-size: 50px;
                     }
                 }
             }
@@ -209,10 +265,12 @@
                 font-weight: 300;
                 font-size: 18px;
                 text-transform: uppercase;
-                line-height: 0.4rem;
+                line-height: 1.3rem;
+                
 
                 @include md{
                     text-align: end;
+                    line-height: 0.4rem;
                 }
             }
         }
@@ -227,7 +285,7 @@
             .skill{
                 max-width: 120px;
                 padding: 4px 10px;
-                font-size: 16px;
+                font-size: 15px;
                 margin: 0px 8px 0px 0px;
                 display: flex;
                 justify-content: center;
@@ -313,7 +371,8 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            background-color: transparent;
+            background: linear-gradient(0deg, #0D0D0D 0%, rgba(34, 34, 34, 0) 73.15%);
+            width: 100%;
         }
 
         button{

@@ -30,11 +30,11 @@
             &_title{
                 font-weight: 700;
                 font-size: 40px;
-                padding-bottom: 48px;
+                padding-bottom: 32px;
                 text-align: center;
 
                 @include md{
-                    font-size: 55px;
+                    font-size: 45px;
                     text-align: start;
                 }
             }
@@ -58,7 +58,7 @@
 
         @include md{
             padding-top: 0px;
-            max-height: 200px;
+            max-height: 170px;
         }
     }
     .shield-title_box{

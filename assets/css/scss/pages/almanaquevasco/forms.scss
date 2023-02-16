@@ -3,7 +3,7 @@
     @media (min-width: 1200px) { @content; }
 }
 
-.c-forms{
+/*.c-forms{
     padding: 20px 0px;
     .box-content{
         position: relative;
@@ -52,16 +52,39 @@
             background-color: #C3281E;
             border: none;
             color: #FFF;
-            padding: 10px 10px;
-            font-size: 16px;
+            padding: 12px 10px;
+            font-size: 20px;
             border-radius: 5px;
 
             &-send{
                 font-weight: 600;
-                padding: 10px 30px;
+                padding: 10px 18px;
                 margin-right: 2px;
                 font-size: 16px;
             }
+        }
+    }
+}
+*/
+.c-form{
+    border: none ;
+    margin-bottom: 0px ;
+    padding: 30px 10px ;
+    color: #000 ;
+
+    .btn-news{
+        background-color: #C3281E !important;
+        border: none;
+        color: #FFF;
+        padding: 12px 10px;
+        font-size: 20px;
+        border-radius: 5px;
+
+        &-send{
+            font-weight: 600;
+            padding: 10px 18px;
+            margin-right: 2px;
+            font-size: 16px;
         }
     }
 }

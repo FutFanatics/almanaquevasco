@@ -14,7 +14,7 @@
     .item{
         padding-right: 8px;
         @include md{
-            padding-right: 32px;
+            
         }
         
     }
@@ -63,7 +63,7 @@
                 width: 100%;
                 display: flex;
                 min-height: 100px;
-                padding:0px 16px;
+                padding:8px 16px;
                 justify-content: space-between;
                 align-items: center;
 
@@ -71,7 +71,7 @@
                     .title-card{
                         color: #313131; 
                         font-weight: 700;
-                        font-size: 20px;
+                        font-size: 18px;
                         margin-bottom: 0;
                     }
                     .content-card{
@@ -81,11 +81,28 @@
                 }
                 .box-number{
                     .number{
-                        font-size: 80px;
+                        font-size: 70px;
                         color:#C91B24 ;
                         font-weight: 800;
                     }
                 }
+            }
+        }
+    }
+    .slick-nav_win{
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        top:-180px;
+        padding: 0px 8%;
+
+        button{
+            background-color: transparent;
+            border: none;
+
+            i{
+                font-size: 25px;
+                color: #FFF;
             }
         }
     }
